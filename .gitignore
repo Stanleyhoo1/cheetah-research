@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Video, images, and pose-output data (large, regenerable)
+*.mp4
+*.avi
+*.mov
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+
+# Dataset and output directories
+data/
+results/
+superanimal_test/
+
+# DeepLabCut / SuperAnimal downloads and logs
+dlc-models/
+*.log
+
+# Windows/WSL download metadata
+*:Zone.Identifier
+
+# Personal notes
+notes.md

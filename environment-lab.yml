@@ -1,0 +1,21 @@
+# The "dlc" environment for a headless machine (the lab computer): training and video
+# analysis only, no labelling GUI.
+#
+#   conda env create -f environment-lab.yml
+#   conda activate dlc
+#
+# The cu126 PyTorch build needs an NVIDIA driver that supports CUDA 12.6 (check nvidia-smi).
+name: dlc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.14.1+cu126
+      - torchvision==0.29.1+cu126
+      - deeplabcut[modelzoo]==3.0.2
+variables:
+  # No display: matplotlib must draw to files only.
+  MPLBACKEND: Agg

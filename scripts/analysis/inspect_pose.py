@@ -3,9 +3,9 @@ Step through pose predictions frame by frame: keypoints, their confidence,
 and (for SuperAnimal output) the detector's bounding boxes.
 
 Usage (run inside an environment with opencv, pandas, tables and matplotlib):
-    python inspect_pose.py VIDEO PREDICTIONS.h5
-    python inspect_pose.py VIDEO PREDICTIONS.h5 --json PREDICTIONS.json   # adds boxes (SuperAnimal)
-    python inspect_pose.py VIDEO PREDICTIONS.h5 --export annotated.mp4    # write a video instead
+    python scripts/analysis/inspect_pose.py VIDEO PREDICTIONS.h5
+    python scripts/analysis/inspect_pose.py VIDEO PREDICTIONS.h5 --json PREDICTIONS.json   # adds boxes (SuperAnimal)
+    python scripts/analysis/inspect_pose.py VIDEO PREDICTIONS.h5 --export annotated.mp4    # write a video instead
 
 If --json is not given, a .json file with the same name as the .h5 is used when it exists.
 

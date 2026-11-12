@@ -3,10 +3,10 @@ View an AcinoSet 3D reconstruction (fte.pickle, ekf.pickle, sba.pickle or fte.ma
 as an animated 3D cheetah skeleton.
 
 Usage:
-    python view_fte.py path/to/run/fte/fte.pickle            # interactive window
-    python view_fte.py path/to/run/fte/fte.pickle --save run.mp4   # or run.gif
-    python view_fte.py path/to/run                             # finds fte/fte.pickle
-    python view_fte.py fte.pickle --static                     # whole run, fixed axes
+    python scripts/analysis/view_fte.py path/to/run/fte/fte.pickle            # interactive window
+    python scripts/analysis/view_fte.py path/to/run/fte/fte.pickle --save run.mp4   # or run.gif
+    python scripts/analysis/view_fte.py path/to/run                             # finds fte/fte.pickle
+    python scripts/analysis/view_fte.py fte.pickle --static                     # whole run, fixed axes
 
 In the window: drag to rotate, space to pause, left/right arrows to step frames.
 Left limbs are blue and right limbs are orange, so a left/right swap shows up

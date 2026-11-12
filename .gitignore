@@ -1,53 +1,67 @@
-# Python
+# ----------------------------------------------------------------------------
+# Python and tooling
+# ----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
-*.egg-info/
-.pytest_cache/
 .ipynb_checkpoints/
-
-# Virtual environments
 venv/
 .venv/
-env/
 
-# Editors / OS
+# Editors, OS, and Windows download metadata (WSL copies these as real files)
 .vscode/
 .idea/
 .DS_Store
 *.swp
-
-# Model weights and checkpoints
-*.pt
-*.pth
-*.ckpt
-*.onnx
-*.safetensors
-
-# Video, images, and pose-output data (large, regenerable)
-*.mp4
-*.avi
-*.mov
-*.h5
-*.hdf5
-*.pickle
-*.pkl
-*.npy
-*.npz
-*.png
-*.jpg
-*.jpeg
-
-# Dataset and output directories
-data/
-results/
-superanimal_test/
-
-# DeepLabCut / SuperAnimal downloads and logs
-dlc-models/
-*.log
-
-# Windows/WSL download metadata
 *:Zone.Identifier
+*:mshield
 
 # Personal notes
 notes.md
+
+# ----------------------------------------------------------------------------
+# Large or regenerable files, anywhere in the repo
+# ----------------------------------------------------------------------------
+# Raw AcinoSet videos (see README: Data)
+data/
+# AcinoSet's own labelled folders, the input to make_project.py
+cheetah_labels/
+# Video-analysis output (DeepLabCut, SuperAnimal, Track-On)
+results/
+results_*/
+
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.pickle
+*.pkl
+*.bak
+*.log
+
+# ----------------------------------------------------------------------------
+# DeepLabCut project: track only config.yaml and the hand labels.
+#
+# Not tracked (all regenerable):
+#   cheetah-dlc/videos/                  symlinks into data/
+#   cheetah-dlc/training-datasets/       rebuilt by create_training_dataset
+#   cheetah-dlc/dlc-models*/             trained weights (copy with rsync)
+#   cheetah-dlc/evaluation-results*/     rebuilt by evaluate_network
+#   labeled-data/*_labeled/              drawn by check_labels
+#   labeled-data/*/img*.png              rebuilt by scripts/labeling/rebuild_frames.py
+#
+# Keep this block last: its "!" rules override *.h5 above.
+# ----------------------------------------------------------------------------
+cheetah-dlc/*
+!cheetah-dlc/config.yaml
+!cheetah-dlc/labeled-data/
+cheetah-dlc/labeled-data/*/*
+!cheetah-dlc/labeled-data/*/CollectedData_*.h5
+!cheetah-dlc/labeled-data/*/CollectedData_*.csv
+cheetah-dlc/labeled-data/*_labeled/

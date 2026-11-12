@@ -6,7 +6,7 @@ and starts tracking it there, both forwards and backwards in time. The result is
 DeepLabCut's .h5 format, so you can open it with inspect_pose.py.
 
 Usage (in the trackon environment):
-    python trackon_from_dlc.py VIDEO DLC.h5 --trackon ~/track_on --ckpt ~/track_on/track_on_r.pt
+    python scripts/analysis/trackon_from_dlc.py VIDEO DLC.h5 --trackon ~/track_on --ckpt ~/track_on/track_on_r.pt
 
 Useful options:
     --start / --end    frame range (default: every frame where DeepLabCut confidently sees the cheetah)

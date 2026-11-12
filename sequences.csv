@@ -1,0 +1,10 @@
+name,run,start_frame,end_frame,cameras
+jules_flick_2017_09_02,julesFlick2_1_2017_09_02,81,110,1 2 3 4 5 6
+jules_run_2019_03_09,julesRun_2019_03_09,96,135,1 2 3 4 5 6
+lily_brake1,lilyBottomFlick2_1_2017_12_21,90,179,1 2 3 4 5 6
+lily_run_2019_03_09,lilyRun_2019_03_09,132,156,1 2 3 4 5 6
+menya_flick_2019_03_07,menyaFlick_2019_03_07,228,277,2 3
+phantom_flick2_2_2017_12_16,phantomBottomFlick2_2_2017_12_16,153,202,1 2 3 4 5 6
+phantom_turn1,phantomFlick_2019_03_07,216,365,1 2 3 4 5 6
+romeo_flick_2019_02_27,romeoFlick_2019_02_27,120,144,2 3
+zorro_20171209_flick,zorroTopFlick1_2017_12_09,45,104,1 2 3 4 5

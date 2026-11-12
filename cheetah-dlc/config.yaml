@@ -1,0 +1,214 @@
+# Config schema version. Do not edit manually.
+config_version: 0
+# Project definitions (do not edit)
+Task: cheetah
+scorer: UCT
+date: Nov01
+multianimalproject: false
+identity:
+
+# Project path (change when moving around)
+project_path: /home/stanleyhoo1/cheetah-research/cheetah-dlc
+pose_config_path:
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/21_12_2017LilyFlick2_1CAM11.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/julesRun_2019_03_09_cam1.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/julesRun_2019_03_09_cam2.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/julesRun_2019_03_09_cam3.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/julesRun_2019_03_09_cam4.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/julesRun_2019_03_09_cam5.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam1.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam2.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam3.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam4.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam5.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_flick_2017_09_02_cam6.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam1.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam2.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam3.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam4.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam5.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/jules_run_2019_03_09_cam6.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam1.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam2.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam3.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam4.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam5.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_brake1_cam6.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam1.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam2.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam3.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam4.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam5.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/lily_run_2019_03_09_cam6.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam1.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam2.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam3.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam4.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam5.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_flick2_2_2017_12_16_cam6.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam1.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam2.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam3.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam4.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam5.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/phantom_turn1_cam6.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/zorro_20171209_flick_cam1.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/zorro_20171209_flick_cam2.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/zorro_20171209_flick_cam3.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/zorro_20171209_flick_cam4.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/zorro_20171209_flick_cam5.mp4:
+    crop: 0, 1920, 0, 1080
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/romeo_flick_2019_02_27_cam2.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/romeo_flick_2019_02_27_cam3.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/menya_flick_2019_03_07_cam2.mp4:
+    crop: 0, 2704, 0, 1520
+  /home/stanleyhoo1/cheetah-research/cheetah-dlc/videos/menya_flick_2019_03_07_cam3.mp4:
+    crop: 0, 2704, 0, 1520
+bodyparts:
+- neck_base
+- spine
+- l_shoulder
+- r_shoulder
+- l_hip
+- r_hip
+- tail_base
+- tail_mid
+- tail_tip
+- l_back_paw
+- r_back_paw
+- l_back_knee
+- r_back_knee
+- l_back_ankle
+- r_back_ankle
+individuals:
+- individual_1
+uniquebodyparts: []
+multianimalbodyparts: []
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0.0
+stop: 1.0
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- - neck_base
+  - spine
+- - spine
+  - tail_base
+- - tail_base
+  - tail_mid
+- - tail_mid
+  - tail_tip
+- - neck_base
+  - l_shoulder
+- - neck_base
+  - r_shoulder
+- - tail_base
+  - l_hip
+- - tail_base
+  - r_hip
+- - l_hip
+  - l_back_knee
+- - l_back_knee
+  - l_back_ankle
+- - l_back_ankle
+  - l_back_paw
+- - r_hip
+  - r_back_knee
+- - r_back_knee
+  - r_back_ankle
+- - r_back_ankle
+  - r_back_paw
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 5
+alphavalue: 0.7
+colormap: rainbow
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: hrnet_w32
+default_augmenter: default
+default_track_method:
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+# if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
+
+# These are very old parameters that are no longer used They are simply ignored.
+resnet:
+croppedtraining:

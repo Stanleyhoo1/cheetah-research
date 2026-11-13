@@ -44,6 +44,7 @@ cheetah-research/
 │   ├── training/
 │   │   └── train.py             drop blank frames, build dataset, train, evaluate
 │   └── analysis/
+│       ├── dlc_trackon.py       DeepLabCut, with Track-On filling the points it loses
 │       ├── inspect_pose.py      step through 2D predictions on a video
 │       ├── trackon_from_dlc.py  Track-On seeded from DeepLabCut predictions
 │       └── view_fte.py          animate an AcinoSet 3D reconstruction
@@ -173,6 +174,11 @@ python scripts/analysis/inspect_pose.py data/julesRun_2019_03_09/cam1.mp4 result
 # fill gaps with Track-On (in the trackon env); output opens in inspect_pose.py
 python scripts/analysis/trackon_from_dlc.py data/julesRun_2019_03_09/cam1.mp4 results/shuffle3/<prediction>.h5 \
     --trackon ~/track_on --ckpt path/to/track_on_r.pt --out results/shuffle3/cam1_trackon.h5
+
+# or keep DeepLabCut wherever it is confident and let Track-On fill only the stretches it loses
+# (trackon env; writes <name>_dlc_trackon.h5, <name>_source.csv and a video to results/<run>/)
+python scripts/analysis/dlc_trackon.py cheetah-dlc/config.yaml data/julesRun_2019_03_09/cam1.mp4 \
+    --dlc-h5 results/shuffle3/<prediction>.h5 --trackon ~/track_on --ckpt path/to/track_on_r.pt
 
 # animate an AcinoSet 3D reconstruction (fte.pickle, ekf.pickle, sba.pickle or fte.mat)
 python scripts/analysis/view_fte.py path/to/run/fte/fte.pickle

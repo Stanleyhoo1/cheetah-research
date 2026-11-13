@@ -8,7 +8,7 @@ multianimalproject: false
 identity:
 
 # Project path (change when moving around)
-project_path: /home/stanleyhoo1/cheetah-research/cheetah-dlc
+project_path: /home/stanleyhoo1/research_project/cheetah-research/cheetah-dlc
 pose_config_path:
 
 # Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
@@ -183,6 +183,7 @@ colormap: rainbow
 # Training,Evaluation and Analysis configuration
 TrainingFraction:
 - 0.95
+- 0.76
 iteration: 0
 default_net_type: hrnet_w32
 default_augmenter: default
